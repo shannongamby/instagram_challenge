@@ -10,6 +10,7 @@ script:
 deploy:
   app: fake-stagram
   provider: heroku
-  skip_cleanup: true
+  run:
+    - bin/rails db:migrate
   api_key:
     secure: V1TKOfI3NPDxR1JANpzMJ4qYy60sSm/LktJt/LO540BzPgp46BodmlRMRiJJrtDACIQ0e/naURQz8I7SfHhKTv1FHONUHI2fjCpA87VNbKRxv61N63ttM353vWTS6HPpkd9riuErGr8PseKCUhKWHhHlSqebmqflk1MEzabKBil4XQKwC0VRIHtUreeghuIhpYcE02w8l7JW5rlWeI7EF3wI3PuPPbAZGjhwnsm6QunyCQkq7y/wuEwsuzSqApXpAyZnHrSvkf9R8Tw65E20ZgD7tRU1nKtwOdLVSP+hBIRkLMW/NQio+WqX8qeEu+FIYkl6PLfvIRplkIQpqNjHGRCZ07CSAQYeT/1EA7Lsm3Eyy5AlPPN+8MQ/IEXLJc8Lh9l14o+b45H15BmttxqraHNFOUQ3wU36or0FUAoCJRxjfdQjms3gvnnAzHprFXbSnoI8q/VHETmJen29jCJ1i2V9HbQIJunlpvMtAcbQlaFGK+ikohvyKe5R5mYyhmd8WcaRmczMiXWZ8lQeY4hJYZXwzu92F0QSjeZz6WggziS9oiKrDPuxJoQW/0pkJPJGhb7HTxevqGqsA2KL8Odsa1YizqxrBn4GGX14xsur4veY9g6dnNu3bQX/Tnb/HUM8KiFPYiczGrr6K20PFZGEE0l7i0i90rVhr4/l1+uuHh0=
