@@ -6,7 +6,10 @@ services:
 
 script:
 - bin/rails db:create
+- bin/rails db:migrate
 - bundle exec rspec
+- bin/rails test
+
 deploy:
   app: fake-stagram
   provider: heroku
