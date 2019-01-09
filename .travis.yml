@@ -1,7 +1,11 @@
 language: ruby
 rvm:
 - 2.5.0
+services:
+- postgresql
+
 script:
+- bin/rails db:create
 - bundle exec rspec
 deploy:
   app: fake-stagram
