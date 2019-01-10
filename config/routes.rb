@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'posts/index'
   get 'posts/new'
   get 'sessions/new'
+  get 'profile', to: 'posts#profile'
   post '/posts', to: 'posts#create'
   delete '/posts/:id', to: 'posts#destroy'
   get  '/signup',  to: 'users#new'

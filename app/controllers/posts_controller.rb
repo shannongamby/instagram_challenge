@@ -3,6 +3,10 @@ class PostsController < ApplicationController
     @posts = Post.order('created_at DESC')
   end
 
+  def profile
+    @posts = Post.where({user: current_user}).order('created_at DESC')
+  end
+
   def new
     if logged_in?
       @post = Post.new
@@ -25,7 +29,7 @@ class PostsController < ApplicationController
   def destroy
     @post = Post.find(params[:id])
     @post.destroy
-    flash[:danger] = "Your post was deleted."
+    flash[:success] = "Your post was deleted."
     redirect_to :root
   end
 
