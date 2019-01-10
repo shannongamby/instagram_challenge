@@ -1,0 +1,17 @@
+<div class="container" id="posts">
+  <% @posts.each do |post| %>
+    <div class="center jumbotron">
+      <div class="border" name="post" id="post_<%= post.id %>">
+        <br>
+        <div id="post_format">
+          <h4 class="user_name"><%= post.user.name %></h4>
+          <p id="time"><%= post.updated_at.strftime("%e %b %Y") %></p>
+          <h2><span id="post_content"><%= simple_format(post.caption) %></span></h2>
+        </div>
+        <% if post.user == current_user %>
+          <%= link_to '❌ DELETE', "posts/#{post.id}", method: :delete, id: "delete-#{post.id}" %>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>

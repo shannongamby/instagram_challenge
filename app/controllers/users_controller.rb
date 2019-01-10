@@ -8,8 +8,8 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       log_in(@user)
-      redirect_to '/'
-      flash.now[:success] = "Thank you for signing up!"
+      flash[:success] = "Thank you for signing up, #{@user[:name]}!"
+      redirect_to :root
     else
       render :new
     end
