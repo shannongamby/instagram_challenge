@@ -43,6 +43,7 @@ As a user,
 So that I can stroll down memory lane,
 I'd like a profile page where only my posts are displayed.
 ```
+----
 
 ### To set up the project
 Clone this repo and run:
