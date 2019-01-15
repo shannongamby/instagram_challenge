@@ -2,7 +2,7 @@
 
 # FAKE-STAGRAM
 
-This is an instagram clone built with Ruby on Rails and deployed on Heroku: https://fake-stagram.herokuapp.com/
+This is an instagram clone built with Ruby on Rails and deployed on Heroku: https://fake-stagram.herokuapp.com/  
 NOTE: Images are deleted every 24 hours due to the current hosting plan!
 
 ## My Approach
