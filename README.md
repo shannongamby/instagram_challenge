@@ -44,6 +44,11 @@ As a user,
 So that I can stroll down memory lane,
 I'd like a profile page where only my posts are displayed.
 ```
+```
+As a user,
+So that I can remove my old posts,
+I'd like the option to delete them.
+```
 ----
 
 ### To set up the project
