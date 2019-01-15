@@ -3,6 +3,7 @@
 # FAKE-STAGRAM
 
 This is an instagram clone built with Ruby on Rails and deployed on Heroku: https://fake-stagram.herokuapp.com/
+NOTE: Images are deleted every 24 hours due to the current hosting plan!
 
 ## My Approach
 My reasons for beginning this project are mainly rooted in wanting to get more familiar with ORMs and databases in general. But there have been other positive side effects too! 
@@ -13,7 +14,7 @@ Before this project:
   
 Now:  
 - Working on this insta-clone has enabled me to explore Rails more deeply than before. 
-- I've gained a better working knowledge of ways I can go about testing it.
+- I've gained a better working knowledge of ways I can go about testing a Rails app.
 - CSS is less of a mystery.
 - User authentication is second nature.
 
