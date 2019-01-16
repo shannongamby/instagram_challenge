@@ -6,8 +6,8 @@
         <div id="post_format">
           <h4 class="user_name"><%= post.user.name %></h4>
           <p id="time"><%= post.updated_at.strftime("%e %b %Y") %></p>
-          <div class="card_center" style="width: 40rem;">
-            <%= image_tag post.image.variant(resize: "1010 x 1010") %>
+          <div class="card" style="width: 100%;">
+            <%= image_tag post.image %>
           </div>
           <h2><span id="post_content"><%= simple_format(post.caption) %></span></h2>
         </div>

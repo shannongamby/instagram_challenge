@@ -6,7 +6,7 @@
         <div id="post_format">
           <h4 class="user_name"><%= post.user.name %></h4>
           <p id="time"><%= post.updated_at.strftime("%e %b %Y") %></p>
-          <div class="card_center" style="width: 40rem;">
+          <div class="card" style="width: 100%;">
             <%= image_tag post.image.variant(resize: "1010 x 1010") %>
           </div>
           <div class="card-body">
